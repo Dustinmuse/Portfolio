@@ -70,6 +70,10 @@ Hi! I'm **Dustin Muse**, a Computer Science student at Ball State University. Iâ
 
 ---
 
+> **Note:** These are just a few highlighted projects. You can find more projects and contributions on my [Website](https://dustinmuse.netlify.app/).
+
+---
+
 ## ðŸ“« Contact
 
 You can reach me via:
