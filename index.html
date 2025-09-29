@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Top-right nav buttons -->
+      <nav class="nav-links">
+        <div class="top-right-buttons">
+          <a href="#container" class="nav-btn">Home</a>
+          <a href="#education-section" class="nav-btn">Education</a>
+          <a href="#skill-section" class="nav-btn">Skills</a>
+          <a href="#project-section" class="nav-btn">Projects</a>
+          <a href="#experience-section" class="nav-btn">Experience</a>
+          <a href="contact_me.html" class="nav-btn">Contact Me</a>
+        </div>
+      </nav>
+      <img src="images/Professional_photo_with_no_background.png" alt="Profile Image" />
+      <div class="container" id="container">
+        <h1>Dustin Muse</h1>
+        <h2>Software Developer</h2>
+        <p>
+          Passionate about crafting efficient and scalable software solutions. Experienced in
+          full-stack development and eager to tackle new challenges. Committed to continuous
+          learning and professional growth.
+        </p>
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/dustin-muse/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Dustinmuse" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <br />
+        <a href="#education-section" class="read-more">Read More</a>
+      </div>
+    </header>
+    <section id="education-section">
+      <h2>Education</h2>
+      <div class="education">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <h4>Ball State University | August 2022 - May 2026</h4>
+        <ul>
+          <li>GPA: 3.79/4.00</li>
+          <li>
+            Relevant Coursework: Software Engineering, Data Structures & Algorithms, Database
+            Systems, Web Development, Operating Systems
+          </li>
+          <li>Dean's List: Spring 2023, Fall 2023, Spring 2024, Fall 2024, Spring 2025</li>
+        </ul>
+      </div>
+    </section>
+    <section id="skill-section">
+      <h2>My Skillset</h2>
+      <div class="wrapper">
+        <div class="skill-container">
+          <h3>Front-End</h3>
+          <ul>
+            <li>HTML & CSS <progress max="100" value="90"></progress></li>
+            <li>JavaScript <progress max="100" value="80"></progress></li>
+            <li>React.js <progress max="100" value="70"></progress></li>
+          </ul>
+        </div>
+        <div class="skill-container">
+          <h3>Back-End</h3>
+          <ul>
+            <li>Python <progress max="100" value="90"></progress></li>
+            <li>Java <progress max="100" value="90"></progress></li>
+            <li>Flask <progress max="100" value="80"></progress></li>
+          </ul>
+        </div>
+        <div class="skill-container">
+          <h3>Database</h3>
+          <ul>
+            <li>MySQL <progress max="100" value="80"></progress></li>
+            <li>MongoDB <progress max="100" value="70"></progress></li>
+            <li>PostgreSQL <progress max="100" value="55"></progress></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="project-section">
+      <h2>Projects</h2>
+      <div class="projects" id="projects-container">
+        <div class="project-card-blur">
+          <div class="blur-overlay">
+            <h3>AI-Powered Resume Scanner</h3>
+            <details>
+              <summary>
+                Tech-stack: <strong>OpenAI</strong>, <strong>HTML</strong>, <strong>CSS</strong>,
+                <strong>JavaScript</strong>, <strong>React.js</strong>, <strong>Python</strong>,
+                <strong>Flask</strong>, <strong>MySQL</strong>
+              </summary>
+              <p></p>
+            </details>
+          </div>
+          <div class="coming-soon">Coming Soon</div>
+        </div>
+        <div class="project-card">
+          <h3>full-stack airline booking system</h3>
+          <details>
+            <summary>
+              Tech-stack: <strong>Python</strong>, <strong>Flask</strong>, <strong>HTML</strong>,
+              <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>PostgreSQL</strong>
+            </summary>
+            <p>
+              A full-stack web application that enables users to search, view, and book airline
+              flights in real time. It features a responsive user interface, secure user
+              authentication.
+            </p>
+          </details>
+          <a href="https://github.com/Dustinmuse/airline_booking_system" target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Virtual network application</h3>
+          <details>
+            <summary>Tech-stack: <strong>Java</strong></summary>
+            <p>
+              A Java application that simulates a virtual network environment for multiple users. It
+              enables devices (or nodes) to communicate over a simulated network, supporting
+              messaging and data transfer between clients. Built with multithreaded Java for
+              concurrent connections, it demonstrates core networking concepts such as sockets,
+              packet handling, and client-server architecture.
+            </p>
+          </details>
+          <a href="https://github.com/maxtharp/VirtualLAN" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>CPU Scheduling Algorithms</h3>
+          <details>
+            <summary>Tech-stack: <strong>Java</strong></summary>
+            <p>
+              A Java application that simulates classic operating-system CPU scheduling policies
+              (First Come First Served, Shortest Job First, Shortest Remaining Time First, and Round
+              Robin). It reads a list of processes with arrival and burst times, runs them under the
+              selected algorithm, and outputs execution timelines and key metrics (waiting time,
+              turnaround time, finish time). Built with a modular design so new scheduling
+              algorithms can be added easily.
+            </p>
+          </details>
+          <a href="https://github.com/Dustinmuse/CS_419_Project_1" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>TCP File Transfer Client & Server</h3>
+          <details>
+            <summary>Tech-stack: <strong>Java</strong></summary>
+            <p>
+              Developed a Java TCP client-server application that enables file management over a
+              network. The client can upload, download, list, rename, and delete files stored on the
+              server. Built custom request/response handling, socket programming, and basic error
+              checking to demonstrate reliable file transfer and remote file system control.
+            </p>
+          </details>
+          <a href="https://github.com/Dustinmuse/CS_316/tree/main/src/project_3" target="_blank"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="experience-section">
+      <h2>Experience</h2>
+      <div class="experience" id="experience-container">
+        <div class="experience-item">
+          <h3>Teaching Assistant - Theory of Computation</h3>
+          <h4>Ball State University | September 2025 - Present</h4>
+          <ul>
+            <li>
+              Guided students in designing and optimizing algorithms, strengthening debugging and
+              problem-solving expertise
+            </li>
+            <li>
+              Graded assignments and projects, providing detailed feedback that emphasized code
+              correctness, efficiency, and maintainability.
+            </li>
+            <li>
+              Created supplemental teaching materials to clarify complex concepts and support
+              hands-on learning.
+            </li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Teaching Assistant - Data Structures and Algorithms</h3>
+          <h4>Ball State University | January 2025 - August 2025</h4>
+          <ul>
+            <li>
+              Assisted over 30 students in mastering advanced <strong>Java</strong> concepts,
+              including inheritance and polymorphism
+            </li>
+            <li>
+              Held weekly office hours and led review sessions, improving class averages by ~3%
+            </li>
+            <li>
+              Reviewed and debugged student code, reinforcing best practices in software design
+            </li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Ecommerce Personal Shopper</h3>
+          <h4>Walmart, inc. | June 2021 - Present</h4>
+          <ul>
+            <li>
+              Collaborated in a fast-paced environment, fulfilling 3,000+ online orders weekly using
+              internal software tools
+            </li>
+            <li>Recognized for consistency and speed, enhancing team workflow efficiency</li>
+            <li>
+              Delivers goods to clients while gently conversing with them to guarantee client
+              satisfaction
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/dustin-muse/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/Dustinmuse" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+</html>

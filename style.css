@@ -1,0 +1,692 @@
+:root {
+  --accent-color: #d52c3a;
+  --primary-color: #1b1c1f;
+  --secondary-color: #101113;
+  --text-color: #d9d9d9;
+  --secondary-text-color: #7f8082;
+  --btn-hover-color: #004494;
+  --topbar-height: 64px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14pt;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+
+header {
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+header .container {
+  width: 850px;
+  max-width: 100%;
+}
+
+header img {
+  height: 70vh;
+  max-height: 600px;
+  border-radius: 50%;
+  border: 10px solid var(--accent-color);
+  margin: 20px;
+  object-fit: cover;
+}
+
+header h1 {
+  margin-top: 200px;
+  font-size: 4rem;
+}
+
+header h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+header p {
+  color: var(--secondary-text-color);
+}
+
+header .read-more {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 1000px;
+  padding: 0.5em 1.25em;
+  text-decoration: none;
+  margin-bottom: 80px;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+header .read-more:hover {
+  background-color: var(--btn-hover-color);
+}
+
+/* === Social Links in Header === */
+header .social-links {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+  font-size: 2rem; /* icon size */
+}
+
+header .social-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* hover colors for each platform */
+header .social-links a[aria-label="LinkedIn"]:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+header .social-links a[aria-label="GitHub"]:hover {
+  color: #6e5494; /* GitHub purple-ish */
+}
+
+/* make the <nav class="nav-links"> a full-width top bar */
+nav.nav-links {
+  position: fixed; /* keep the bar visible */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--topbar-height);
+  background-color: var(--secondary-color); /* bar color - change if you want */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* push buttons to the right */
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* buttons container now sits inside the bar (not fixed) */
+.top-right-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: static; /* remove the previous fixed positioning */
+  margin-left: auto; /* ensure it stays to the right if other nav content appears */
+  padding-right: 30px;
+}
+
+/* slightly tighten button spacing for the top bar */
+.top-right-buttons .nav-btn {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.top-right-buttons .nav-btn:hover {
+  background-color: var(--btn-hover-color);
+}
+
+#education-section {
+  padding: 80px 20px 80px 20px;
+  background-color: var(--secondary-color);
+}
+
+#education-section h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#education-section .education {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 30px;
+  background-color: var(--primary-color); /* darker box behind */
+  border-radius: 12px; /* rounded corners */
+  border: 4px solid var(--accent-color);
+  box-shadow: none; /* remove shadow if you add border */
+}
+
+#education-section .education h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+#education-section .education h4 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+#education-section .education ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+#education-section .education ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* === Skills Section === */
+#skill-section {
+  padding: 80px 20px 80px 20px;
+  background-color: var(--secondary-color);
+}
+
+#skill-section h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#skill-section .wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.skill-container {
+  width: 400px;
+  max-width: 100%;
+  border: 5px solid var(--primary-color);
+  transition: all 0.3s ease; /* smooth transition */
+}
+
+.skill-container:hover {
+  border: 5px solid var(--accent-color);
+}
+
+.skill-container h3 {
+  background-color: var(--primary-color);
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skill-container ul {
+  margin: 10px 0;
+  list-style: none;
+}
+
+.skill-container ul li {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-container ul li progress {
+  accent-color: var(--accent-color);
+}
+
+#project-section {
+  padding: 80px 20px 80px 20px;
+  background-color: var(--secondary-color);
+  position: relative; /* for positioning scroll buttons */
+  overflow: hidden; /* hide overflow from scroll buttons */
+}
+
+#projects-container {
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  flex-wrap: nowrap; /* prevents cards from dropping to next line */
+}
+
+/* hide scrollbar on WebKit */
+#projects-container::-webkit-scrollbar {
+  display: none;
+}
+
+#project-section h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* wrapper for projects — just like skill-section */
+#project-section .projects {
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px; /* space between cards */
+  flex-wrap: nowrap;
+  overflow-x: auto; /* enable horizontal scrolling */
+  scroll-behavior: smooth;
+}
+
+/* each card — same width and look as skill-container */
+.project-card {
+  width: 400px; /* same as skill-container */
+  max-width: 100%;
+  border: 10px solid var(--primary-color);
+  border-top: none;
+  background-color: var(--secondary-color);
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  display: block; /* stack content vertically */
+  flex: 0 0 auto; /* prevent shrinking in flex container */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.project-card h3 {
+  background-color: var(--primary-color);
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.project-card p {
+  color: var(--text-color);
+  padding: 15px;
+}
+
+.project-card a {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 500;
+  border-radius: 1000px;
+  padding: 0.5em 1.25em;
+  text-decoration: none;
+  transition: 200ms ease;
+  margin-bottom: 15px;
+}
+
+.project-card a:hover {
+  background-color: var(--btn-hover-color);
+}
+
+/* <summary> clickable header */
+.project-card details summary {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  cursor: pointer;
+  list-style: none; /* removes default triangle in some browsers */
+  position: relative;
+  padding-left: 20px; /* space for custom icon */
+  padding-bottom: 20px;
+}
+
+/* custom arrow indicator */
+.project-card details summary::before {
+  content: "▶";
+  position: absolute;
+  left: 5px;
+  top: 0;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+  color: var(--text-color);
+}
+
+/* rotate arrow when open */
+.project-card details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/*blurred project card*/
+.project-card-blur {
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  border: 10px solid var(--primary-color);
+  border-top: none;
+  background-color: var(--secondary-color);
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex: 0 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.project-card-blur h3 {
+  background-color: var(--primary-color);
+  padding: 15px 0;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.project-card-blur details {
+  padding: 15px;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.project-card-blur .coming-soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+  background-color: var(--primary-color);
+}
+
+.project-card-blur:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.project-card-blur:hover h3,
+.project-card-blur:hover details {
+  filter: blur(5px);
+}
+
+.project-card-blur:hover .coming-soon {
+  opacity: 1;
+}
+
+.project-card-blur:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.project-card-blur details {
+  padding: 15px;
+  color: var(--text-color);
+  text-align: center; /* center the content */
+}
+
+.project-card-blur details summary {
+  font-size: 1.1rem;
+  font-weight: 600; /* same as other cards */
+  color: var(--text-color);
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* make the <p> inside details look the same as other cards */
+.project-card-blur details p {
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+
+/* === Experience Section === */
+#experience-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #101113 0%, #1b1c1f 100%);
+  position: relative;
+}
+
+#experience-section h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Timeline style container */
+#experience-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 30px; /* space for timeline line */
+}
+
+#experience-container::before {
+  content: "";
+  position: absolute;
+  left: 15px; /* center of timeline */
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+/* Individual experience item */
+.experience-item {
+  position: relative;
+  margin-bottom: 50px;
+  padding: 20px 30px;
+  background-color: var(--secondary-color);
+  border-left: 8px solid var(--accent-color);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Timeline circle */
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: -27px; /* center circle on timeline line */
+  top: 25px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+}
+
+/* Job title */
+.experience-item h3 {
+  font-size: 1.75rem;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+/* Company + date */
+.experience-item h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--secondary-text-color);
+  margin-bottom: 15px;
+}
+
+/* Description list */
+.experience-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: var(--text-color);
+}
+
+.experience-item ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* css for contact_me.html */
+
+#contact-section {
+  padding: 80px 20px 80px 20px;
+  background-color: var(--secondary-color);
+}
+
+#contact-section header {
+  justify-content: center;
+}
+
+#contact-section h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#contact-section p {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+#contact-section a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact-section a:hover {
+  text-decoration: underline;
+}
+
+#contact-section ul {
+  margin-top: 20px;
+  list-style: none;
+  text-align: left;
+  color: var(--text-color);
+}
+
+#contact-section ul li {
+  margin-bottom: 10px;
+}
+
+.home-btn {
+  position: fixed; /* makes it stick on scroll */
+  top: 20px; /* distance from top of screen */
+  right: 20px; /* distance from right of screen */
+  background-color: var(--accent-color); /* button color */
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 9999; /* keeps it above everything */
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #0056b3; /* darker blue on hover */
+}
+
+/* Two-column layout for contact section */
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* stacks on small screens */
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: fle;
+}
+
+/* Left column – big heading */
+.contact-left {
+  flex: 1 1 300px;
+  text-align: left;
+  border-left: 8px solid var(--accent-color);
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.contact-left h3 {
+  color: var(--text-color);
+  text-align: left;
+}
+
+/* Right column – styled box */
+.contact-right {
+  flex: 1 1 300px;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.contact-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-right ul li {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.contact-right a {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-right a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+  font-size: 0.9rem;
+}
+
+/* === Social Links in Header === */
+footer .social-links {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+  font-size: 2rem; /* icon size */
+  justify-content: center;
+}
+
+footer .social-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* hover colors for each platform */
+footer .social-links a[aria-label="LinkedIn"]:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+footer .social-links a[aria-label="GitHub"]:hover {
+  color: #6e5494; /* GitHub purple-ish */
+}
