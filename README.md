@@ -12,11 +12,11 @@ Welcome to my personal portfolio! This website highlights my projects, skills, a
 
 ## 🚀 Table of Contents
 
-- [About Me](#about-me)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Projects](#projects)
-- [Contact](#contact)
+- [About Me](#-about-me)
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Projects](#-projects)
+- [Contact](#-contact)
 
 ---
 
