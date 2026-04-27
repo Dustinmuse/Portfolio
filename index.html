@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dustin Muse - Software Developer Portfolio. Discover my projects, skills, and experience in full-stack development." />
+    <title>Dustin Muse | Software Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Abstract Background Elements -->
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+    <div class="bg-shape shape3"></div>
+
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="#home" class="logo">DM<span>.</span></a>
+        <div class="nav-links">
+          <a href="#home" class="nav-btn">Home</a>
+          <a href="#education-section" class="nav-btn">Education</a>
+          <a href="#skill-section" class="nav-btn">Skills</a>
+          <a href="#project-section" class="nav-btn">Projects</a>
+          <a href="#experience-section" class="nav-btn">Experience</a>
+          <a href="contact_me.html" class="nav-btn btn-highlight">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero-section reveal">
+      <div class="hero-content">
+        <div class="badge">Software Developer</div>
+        <h1 class="hero-title">Hi, I'm <br/><span class="gradient-text">Dustin Muse</span></h1>
+        <p class="hero-desc">
+          Passionate about crafting efficient and scalable software solutions. Experienced in
+          full-stack development and eager to tackle new challenges. Committed to continuous
+          learning and professional growth.
+        </p>
+        <div class="hero-actions">
+          <a href="#project-section" class="btn btn-primary">View Projects</a>
+          <a href="#education-section" class="btn btn-secondary">Read More</a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/dustin-muse/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Dustinmuse" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="image-glow"></div>
+        <img src="images/Professional_photo_with_no_background.png" alt="Dustin Muse Profile Picture" class="hero-img" onerror="this.src='https://via.placeholder.com/400x400?text=Dustin+Muse'" />
+      </div>
+    </header>
+
+    <main>
+      <section id="education-section" class="section reveal">
+        <h2 class="section-title">Education</h2>
+        <div class="education-card glass-card">
+          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="card-content">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <h4>Ball State University <span class="date-badge">Aug 2022 - May 2026</span></h4>
+            <ul class="styled-list">
+              <li><strong>GPA:</strong> 3.79/4.00</li>
+              <li>
+                <strong>Relevant Coursework:</strong> Software Engineering, Data Structures & Algorithms, Database
+                Systems, Web Development, Operating Systems
+              </li>
+              <li><strong>Dean's List:</strong> Spring 2023, Fall 2023, Spring 2024, Fall 2024, Spring 2025</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skill-section" class="section reveal">
+        <h2 class="section-title">My Skillset</h2>
+        <div class="skills-wrapper">
+          <div class="skill-card glass-card">
+            <div class="skill-header">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Front-End</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill">
+                <div class="skill-info"><span>HTML & CSS</span><span>90%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill-info"><span>React.js</span><span>70%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-header">
+              <i class="fas fa-server"></i>
+              <h3>Back-End</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill">
+                <div class="skill-info"><span>Python</span><span>90%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill-info"><span>Java</span><span>90%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill-info"><span>Flask</span><span>80%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-header">
+              <i class="fas fa-database"></i>
+              <h3>Database</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill">
+                <div class="skill-info"><span>MySQL</span><span>80%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill-info"><span>MongoDB</span><span>70%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill-info"><span>PostgreSQL</span><span>55%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="project-section" class="section reveal">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-container">
+          
+          <div class="project-card glass-card blur-card">
+            <div class="blur-overlay">
+              <div class="project-content">
+                <h3>AI-Powered Resume Scanner</h3>
+                <div class="tech-stack">
+                  <span class="tech-tag">OpenAI</span>
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+                <p>Advanced resume parsing and keyword matching using OpenAI's models.</p>
+              </div>
+            </div>
+            <div class="coming-soon-badge">Coming Soon</div>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <h3>Airline Booking System</h3>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <p>
+                A full-stack web application enabling users to search, view, and book airline
+                flights in real time with secure user authentication.
+              </p>
+            </div>
+            <a href="https://github.com/Dustinmuse/airline_booking_system" target="_blank" class="project-link">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <h3>Virtual Network App</h3>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Sockets</span>
+              </div>
+              <p>
+                A multithreaded Java application simulating a virtual network for multiple users. Supports messaging and data transfer between concurrent clients.
+              </p>
+            </div>
+            <a href="https://github.com/maxtharp/VirtualLAN" target="_blank" class="project-link">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <h3>CPU Scheduling Algorithms</h3>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Algorithms</span>
+              </div>
+              <p>
+                Simulates OS CPU scheduling policies (FCFS, SJF, SRTF, RR). Outputs execution timelines and key performance metrics with a modular design.
+              </p>
+            </div>
+            <a href="https://github.com/Dustinmuse/CS_419_Project_1" target="_blank" class="project-link">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-content">
+              <h3>TCP File Transfer</h3>
+              <div class="tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">TCP/IP</span>
+              </div>
+              <p>
+                Client-server app for file management over a network. Supports upload, download, list, rename, and delete functionality with robust error handling.
+              </p>
+            </div>
+            <a href="https://github.com/Dustinmuse/CS_316/tree/main/src/project_3" target="_blank" class="project-link">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="experience-section" class="section reveal">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3>Teaching Assistant - Theory of Computation</h3>
+              <h4>Ball State University <span class="date-badge">Sep 2025 - Present</span></h4>
+              <ul class="styled-list">
+                <li>Guided students in designing and optimizing algorithms, strengthening debugging and problem-solving expertise.</li>
+                <li>Graded assignments and projects, providing detailed feedback on code correctness, efficiency, and maintainability.</li>
+                <li>Created supplemental teaching materials to clarify complex concepts and support hands-on learning.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3>Teaching Assistant - Data Structures and Algorithms</h3>
+              <h4>Ball State University <span class="date-badge">Jan 2025 - Aug 2025</span></h4>
+              <ul class="styled-list">
+                <li>Assisted over 30 students in mastering advanced <strong>Java</strong> concepts, including inheritance and polymorphism.</li>
+                <li>Held weekly office hours and led review sessions, improving class averages by ~3%.</li>
+                <li>Reviewed and debugged student code, reinforcing best practices in software design.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3>Ecommerce Personal Shopper</h3>
+              <h4>Walmart, inc. <span class="date-badge">Jun 2021 - Present</span></h4>
+              <ul class="styled-list">
+                <li>Collaborated in a fast-paced environment, fulfilling 3,000+ online orders weekly using internal software tools.</li>
+                <li>Recognized for consistency and speed, enhancing team workflow efficiency.</li>
+                <li>Delivered goods to clients while guaranteeing high client satisfaction.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="logo">DM<span>.</span></div>
+        <p>&copy; 2026 Dustin Muse. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/dustin-muse/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Dustinmuse" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Simple Scroll Reveal Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const reveals = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if(entry.isIntersecting) {
+              entry.target.classList.add("active");
+            }
+          });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(reveal => {
+          observer.observe(reveal);
+        });
+      });
+    </script>
+  </body>
+</html>
