@@ -604,6 +604,59 @@ h6,
   gap: 10px;
 }
 
+/* --- Certifications Section --- */
+.certifications-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+.cert-icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  background: rgba(255, 51, 102, 0.1);
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cert-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.cert-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition-smooth);
+}
+.cert-link i {
+  transition: transform 0.3s;
+}
+.cert-link:hover {
+  color: #fff;
+}
+.cert-link:hover i {
+  transform: translateX(5px);
+}
+
 /* --- Contact Page Styles --- */
 .contact-page .navbar {
   background: rgba(10, 10, 12, 0.9);
@@ -615,12 +668,18 @@ h6,
   align-items: center;
 }
 .contact-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin-top: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact-card {
+  flex: 1 1 280px;
+  max-width: 350px;
   text-align: center;
   padding: 40px 30px;
 }
