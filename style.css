@@ -30,7 +30,6 @@ html {
   color: var(--text-primary);
   scroll-behavior: smooth;
   background-color: var(--bg-primary);
-  overflow-x: hidden;
 }
 
 body {
@@ -52,7 +51,7 @@ h6,
 
 /* --- Abstract Background Shapes --- */
 .bg-shape {
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   filter: blur(120px);
   z-index: -1;
